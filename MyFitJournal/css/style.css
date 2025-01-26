@@ -1,0 +1,266 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background:#002244;
+    color: white;
+}
+
+/* Header */
+
+header{
+    background-color:#002244;
+    padding: 10px;
+    text-align: left;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    border-bottom: 1px solid #ccc;
+    justify-content: left;
+}
+
+header h1{
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+/* bara de navigatie */
+nav ul{
+    list-style-type: none;
+    padding: 0; 
+    display: flex;
+    justify-content: left;
+    gap: 15px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+.journal {
+    background-color:white;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.workouts {
+    background-color:white;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.schedule {
+    background-color:white;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* umbra pentru butoanele de meniu */
+
+.journal:hover{
+    background-color: rgb(161, 161, 161);
+}
+
+.workouts:hover{
+    background-color: rgb(161, 161, 161);
+}
+
+.schedule:hover{
+    background-color: rgb(161, 161, 161);
+}
+
+
+/* Container pt continut */
+
+#foodSearchForm{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#foodSearchInput{
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+#foodResultsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 200px;
+    border: #ccc 1px solid;
+    border-radius: 10px;
+}
+
+#workoutsSearchInput{
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+/* bara de search - pagina programare 1la1 */
+#specialistSearchInput{
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+/* buton de adaugare alimente in jurnal */
+.addToJournalButton{
+    background-color:white;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.addToJournalButton:hover
+{
+    background-color:  rgb(161, 161, 161);
+}
+
+.foodCard{
+    width: 200px;
+    padding: 10px;
+    background:gray;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border: 3px solid #ccc;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+#buttonType{
+    background-color:white;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#buttonType:hover{
+    background-color: rgb(161, 161, 161);
+}
+
+ /* Container pt */
+#foodJournalList{
+    background-color:blue;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+/* Mesaj când jurnalul este gol */
+#foodJournalList p {
+    text-align: center;
+    color: #bbb;
+    font-style: italic;
+}
+/* Jurnalul de alimente */
+.journalEntry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #002244;
+    margin: 10px 0;
+    border: gray 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* controale de incrementare/decremetnare */
+.controls {
+    display: flex;
+    gap: 10px;
+}
+
+button.increment,
+button.decrement {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+/* butoane increment si decrement */
+button.increment:hover,
+button.decrement:hover {
+    background-color: #115695;
+    padding: 5 px 15px;
+    font-size: 16px;
+    border:none;
+    border-radius:5px;
+    cursor: pointer;
+    color:white;
+    transition: background-color 0.3s;
+}
+
+button.decrement {
+    background-color: #dc3545;
+}
+
+button.decrement:hover {
+    background-color: #b21f2d;
+}
+
+button.increment {
+    background-color: #28a745;
+}
+
+button.increment:hover {
+    background-color: #218838;
+}
+
